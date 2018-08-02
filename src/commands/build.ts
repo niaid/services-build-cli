@@ -18,18 +18,19 @@ export class Build extends Command {
         help: flags.help({char: 'h'}),
         source: flags.string({
             char: 's',
-            description: 'The API project root directory'
+            description: 'The API project root directory',
+            default: process.cwd()
         }),
         destination: flags.string({
             char: 'd',
             description: 'The path to the API distribution'
         }),
-        npmCache: flags.boolean({
-            description: 'Overrides global npm cache for npm install'
+        npmCache: flags.string({
+            description: 'Path to a directory. Overrides the global npm cache for the npm install step.'
         }),
         buildVersion: flags.string({
             char: 'b',
-            description: 'Customize the service build version'
+            description: 'Customize the API project build version'
         })
     };
 
@@ -41,9 +42,8 @@ export class Build extends Command {
         const destination = join('dist', ['service', flags.buildVersion || pkg.version].join('.'));
         const options = defaults(flags, {
             buildVersion: pkg.version,
-            npmCache: null,
             destination,
-            source: process.cwd()
+            npmCache: null
         });
 
         await buildService(options);

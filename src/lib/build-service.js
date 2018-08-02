@@ -30,7 +30,7 @@ async function copyServerFiles({ destination, cwd }) {
  * @param {String} [npmCache] - Path to local npm cache directory
  * @returns {Promise}
  */
-async function buildService({ source, destination, buildVersion, npmCache = null }) {
+async function buildService({ source, destination, buildVersion, npmCache }) {
     const localCache = npmCache || path_1.resolve(source, destination, 'local-npm-cache');
     const envFilePath = path_1.join(destination, '.env');
     await clean_1.clean(destination);

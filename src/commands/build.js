@@ -12,9 +12,8 @@ class Build extends command_1.Command {
         const destination = path_1.join('dist', ['service', flags.buildVersion || pkg.version].join('.'));
         const options = lodash_1.defaults(flags, {
             buildVersion: pkg.version,
-            npmCache: null,
             destination,
-            source: process.cwd()
+            npmCache: null
         });
         await build_service_1.buildService(options);
     }
@@ -28,18 +27,19 @@ Build.flags = {
     help: command_1.flags.help({ char: 'h' }),
     source: command_1.flags.string({
         char: 's',
-        description: 'The API project root directory'
+        description: 'The API project root directory',
+        default: process.cwd()
     }),
     destination: command_1.flags.string({
         char: 'd',
         description: 'The path to the API distribution'
     }),
-    npmCache: command_1.flags.boolean({
-        description: 'Overrides global npm cache for npm install'
+    npmCache: command_1.flags.string({
+        description: 'Path to a directory. Overrides the global npm cache for the npm install step.'
     }),
     buildVersion: command_1.flags.string({
         char: 'b',
-        description: 'Customize the service build version'
+        description: 'Customize the API project build version'
     })
 };
 Build.args = [];

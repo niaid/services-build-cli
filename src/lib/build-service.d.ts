@@ -10,5 +10,5 @@ export declare function buildService({ source, destination, buildVersion, npmCac
     source: any;
     destination: any;
     buildVersion: any;
-    npmCache?: null;
+    npmCache: any;
 }): Promise<any>;

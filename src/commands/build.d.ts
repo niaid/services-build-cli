@@ -6,7 +6,7 @@ export declare class Build extends Command {
         help: import("../../../../../../../Users/virtanevakd/Desktop/Projects/services-build-cli/node_modules/@oclif/parser/lib/flags").IBooleanFlag<void>;
         source: flags.IOptionFlag<string | undefined>;
         destination: flags.IOptionFlag<string | undefined>;
-        npmCache: import("../../../../../../../Users/virtanevakd/Desktop/Projects/services-build-cli/node_modules/@oclif/parser/lib/flags").IBooleanFlag<boolean>;
+        npmCache: flags.IOptionFlag<string | undefined>;
         buildVersion: flags.IOptionFlag<string | undefined>;
     };
     static args: never[];
