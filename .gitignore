@@ -18,6 +18,10 @@ logs
 # Local Config
 config.json
 
+$ TypeScript output
+/src/**/*.js
+*.map.js
+
 # Runtime data
 pids
 *.pid
