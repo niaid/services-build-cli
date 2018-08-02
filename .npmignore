@@ -1,0 +1,12 @@
+test
+run
+coverage
+dist
+.npmignore
+.gitmodules
+*.md
+*.ts
+tsconfig.json
+tslint.json
+.nycrc
+.commitlintrc.yml

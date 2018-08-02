@@ -1,0 +1,31 @@
+language: node_js
+notifications:
+  email: false
+node_js:
+  - lts/*
+  - node
+before_install:
+  - 'git config --global url."git@github.com:".insteadOf "https://github.com/"'
+  - npm install -g nsp codecov
+script:
+  - nsp check
+  - npm test
+  - codecov
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/
+cache:
+  directories:
+    - ~/.npm
+    - node_modules
+jobs:
+  include:
+    - stage: release
+      if: branch = master
+      node_js: lts/*
+      script: skip
+      deploy:
+        provider: script
+        skip_cleanup: true
+        script:
+          - npm run semantic-release

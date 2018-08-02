@@ -1,0 +1,15 @@
+{
+  "name": "test-api",
+  "version": "1.0.0",
+  "description": "test API",
+  "main": "index.js",
+  "repository": "https://github.com/LabShare/test-api.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@labshare/services": "^3.0.0"
+  }
+}
