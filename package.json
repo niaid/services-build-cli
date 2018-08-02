@@ -14,7 +14,8 @@
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "pretest": "tsc",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
-    "build": "tsc"
+    "build": "tsc",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
