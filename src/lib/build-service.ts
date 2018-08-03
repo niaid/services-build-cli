@@ -37,7 +37,7 @@ export async function buildService({
                                        source,
                                        destination,
                                        buildVersion,
-                                       npmCache = null
+                                       npmCache
                                    }) {
     const localCache = npmCache || resolve(source, destination, 'local-npm-cache');
     const envFilePath = join(destination, '.env');

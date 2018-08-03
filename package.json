@@ -12,6 +12,7 @@
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
+    "publish": "tsc",
     "pretest": "tsc",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
     "build": "tsc",
