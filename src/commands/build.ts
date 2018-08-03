@@ -18,19 +18,19 @@ export class Build extends Command {
         help: flags.help({char: 'h'}),
         source: flags.string({
             char: 's',
-            description: 'The API project root directory',
+            description: 'Customizes the project root directory',
             default: process.cwd()
         }),
         destination: flags.string({
             char: 'd',
-            description: 'The path to the API distribution'
+            description: 'Customizes the build distribution output folder.'
         }),
         npmCache: flags.string({
             description: 'Path to a directory. Overrides the global npm cache for the npm install step.'
         }),
         buildVersion: flags.string({
             char: 'b',
-            description: 'Customize the API project build version'
+            description: 'Customize the project build version.'
         })
     };
 
