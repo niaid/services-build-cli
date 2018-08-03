@@ -1,11 +1,11 @@
 test
-run
 coverage
 dist
 .npmignore
 .gitmodules
 *.md
 *.ts
+*.d.ts
 tsconfig.json
 tslint.json
 .nycrc

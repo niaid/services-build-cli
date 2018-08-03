@@ -1,6 +1,6 @@
 {
   "name": "@labshare/services-build-cli",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "Build plugin for @labshare/services",
   "main": "lib/index.js",
   "oclif": {
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "publish": "tsc",
+    "prepare": "tsc",
     "pretest": "tsc",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
     "build": "tsc",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LabShare/services-build-cli.git"
+    "url": "https://github.com/LabShare/services-build-cli.git"
   },
   "keywords": [
     "Build",
