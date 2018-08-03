@@ -1,6 +1,6 @@
 {
   "name": "@labshare/services-build-cli",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "Build plugin for @labshare/services",
   "main": "lib/index.js",
   "oclif": {
