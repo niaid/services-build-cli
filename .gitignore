@@ -21,6 +21,7 @@ config.json
 $ TypeScript output
 /src/**/*.js
 *.map.js
+*.d.ts
 
 # Runtime data
 pids
