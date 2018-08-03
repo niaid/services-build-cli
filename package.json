@@ -12,7 +12,7 @@
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "prepare": "tsc",
+    "publish": "tsc",
     "pretest": "tsc",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
     "build": "tsc",
@@ -29,7 +29,7 @@
   ],
   "files": [
     "/bin",
-    "/lib",
+    "/src",
     "/npm-shrinkwrap.json",
     "/oclif.manifest.json"
   ],
