@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/LabShare/services-build-cli/compare/v1.0.0...v1.0.1) (2018-08-03)
+
+
+### Bug Fixes
+
+* **npm:** use "prepare" for pre-publish build ([bf18010](https://github.com/LabShare/services-build-cli/commit/bf18010))
+
 # 1.0.0 (2018-08-03)
 
 
