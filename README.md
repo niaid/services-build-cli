@@ -4,14 +4,69 @@
 
 # services-build-cli
 
-The services build CLI can be used to generate distributions for [@labshare/services](https://www.npmjs.com/package/@labshare/services) API projects.
-
-# Install
-
-`npm i @labshare/services-build-cli`
-or
-`npm i -g @labshare/services-build-cli`
-
+<!-- toc -->
+* [services-build-cli](#services-build-cli)
+* [Usage](#usage)
+* [Commands](#commands)
+<!-- tocstop -->
 # Usage
+<!-- usage -->
+```sh-session
+$ npm install -g @labshare/services-build-cli
+$ services COMMAND
+running command...
+$ services (-v|--version|version)
+@labshare/services-build-cli/1.0.2 darwin-x64 node-v8.11.2
+$ services --help [COMMAND]
+USAGE
+  $ services COMMAND
+...
+```
+<!-- usagestop -->
+# Commands
+<!-- commands -->
+* [`services build`](#services-build)
+* [`services help [COMMAND]`](#services-help-command)
 
-`services build --help`
+## `services build`
+
+The services build CLI can be used to generate distributions for Node.js API projects.
+
+```
+USAGE
+  $ services build
+
+OPTIONS
+  -b, --buildVersion=buildVersion  Set the project build version.
+  -d, --destination=destination    Set the build distribution output folder.
+  -h, --help                       show CLI help
+
+  -s, --source=source              [default: /Users/virtanevakd/Desktop/Projects/services-build-cli] Set the project
+                                   root directory
+
+  --npmCache=npmCache              Path to a directory. Overrides the global npm cache for the npm install step.
+
+EXAMPLES
+  $ services build
+  $ services build --destination ./dist --buildVersion 0.1.2
+```
+
+_See code: [src/commands/build.ts](https://github.com/LabShare/services-build-cli/blob/v1.0.2/src/commands/build.ts)_
+
+## `services help [COMMAND]`
+
+display help for services
+
+```
+USAGE
+  $ services help [COMMAND]
+
+ARGUMENTS
+  COMMAND  command to show help for
+
+OPTIONS
+  --all  see all commands in CLI
+```
+
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5/src/commands/help.ts)_
+<!-- commandsstop -->

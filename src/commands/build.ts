@@ -7,7 +7,7 @@ import * as readPkg from 'read-pkg';
 import {Command, flags} from '@oclif/command'
 
 export class Build extends Command {
-    static description = 'Builds a Node.js API distribution';
+    static description = 'The services build CLI can be used to generate distributions for Node.js API projects.';
 
     static examples = [
         `$ services build`,
@@ -18,19 +18,19 @@ export class Build extends Command {
         help: flags.help({char: 'h'}),
         source: flags.string({
             char: 's',
-            description: 'Customizes the project root directory',
+            description: 'Set the project root directory',
             default: process.cwd()
         }),
         destination: flags.string({
             char: 'd',
-            description: 'Customizes the build distribution output folder.'
+            description: 'Set the build distribution output folder.'
         }),
         npmCache: flags.string({
             description: 'Path to a directory. Overrides the global npm cache for the npm install step.'
         }),
         buildVersion: flags.string({
             char: 'b',
-            description: 'Customize the project build version.'
+            description: 'Set the project build version.'
         })
     };
 
