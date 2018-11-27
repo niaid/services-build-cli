@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/LabShare/services-build-cli/compare/v1.0.2...v1.0.3) (2018-11-27)
+
+
+### Bug Fixes
+
+* **docs:** use OClif to generate documentation ([3edeb8b](https://github.com/LabShare/services-build-cli/commit/3edeb8b))
+
 ## [1.0.2](https://github.com/LabShare/services-build-cli/compare/v1.0.1...v1.0.2) (2018-08-03)
 
 

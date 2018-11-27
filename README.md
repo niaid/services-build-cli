@@ -16,7 +16,7 @@ $ npm install -g @labshare/services-build-cli
 $ services COMMAND
 running command...
 $ services (-v|--version|version)
-@labshare/services-build-cli/1.0.2 darwin-x64 node-v8.11.2
+@labshare/services-build-cli/1.0.3 linux-x64 node-v10.13.0
 $ services --help [COMMAND]
 USAGE
   $ services COMMAND
@@ -41,8 +41,8 @@ OPTIONS
   -d, --destination=destination    Set the build distribution output folder.
   -h, --help                       show CLI help
 
-  -s, --source=source              [default: /Users/virtanevakd/Desktop/Projects/services-build-cli] Set the project
-                                   root directory
+  -s, --source=source              [default: /home/travis/build/LabShare/services-build-cli] Set the project root
+                                   directory
 
   --npmCache=npmCache              Path to a directory. Overrides the global npm cache for the npm install step.
 
@@ -51,7 +51,7 @@ EXAMPLES
   $ services build --destination ./dist --buildVersion 0.1.2
 ```
 
-_See code: [src/commands/build.ts](https://github.com/LabShare/services-build-cli/blob/v1.0.2/src/commands/build.ts)_
+_See code: [src/commands/build.ts](https://github.com/LabShare/services-build-cli/blob/v1.0.3/src/commands/build.ts)_
 
 ## `services help [COMMAND]`
 
@@ -68,5 +68,5 @@ OPTIONS
   --all  see all commands in CLI
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.0.5/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v2.1.4/src/commands/help.ts)_
 <!-- commandsstop -->
