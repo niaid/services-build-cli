@@ -12,13 +12,14 @@
   },
   "scripts": {
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "prepare": "tsc",
+    "prepare": "npm run snyk-protect && tsc",
     "pretest": "tsc",
     "test": "nyc mocha --forbid-only \"test/**/*.test.ts\"",
     "build": "tsc",
     "semantic-release": "semantic-release",
     "version": "oclif-dev readme && git add README.md",
-    "pack": "oclif-dev pack"
+    "pack": "oclif-dev pack",
+    "snyk-protect": "snyk protect"
   },
   "repository": {
     "type": "git",
@@ -47,7 +48,8 @@
     "gulp": "^4.0.0",
     "lodash": "^4.17.10",
     "read-pkg": "^4.0.1",
-    "tslib": "^1.9.3"
+    "tslib": "^1.9.3",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
@@ -75,5 +77,6 @@
   "homepage": "https://github.com/LabShare/services-build-cli#readme",
   "release": {
     "extends": "@labshare/semantic-release-config"
-  }
+  },
+  "snyk": true
 }
