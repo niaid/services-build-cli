@@ -1,7 +1,7 @@
 {
-  "name": "@labshare/services-build-cli",
+  "name": "@niaid/services-build-cli",
   "version": "1.0.3",
-  "description": "Build plugin for @labshare/services",
+  "description": "Build plugin for @niaid/services (formerly @labshare/services)",
   "main": "lib/index.js",
   "oclif": {
     "commands": "./src/commands",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LabShare/services-build-cli.git"
+    "url": "https://github.com/niaid/services-build-cli.git"
   },
   "keywords": [
     "Build",
@@ -52,7 +52,7 @@
   "devDependencies": {
     "@commitlint/cli": "^7.0.0",
     "@commitlint/config-conventional": "^7.0.1",
-    "@labshare/semantic-release-config": "^1.0.0",
+    "@niaid/semantic-release-config": "^1.0.0",
     "husky": "^0.14.3",
     "@oclif/dev-cli": "^1.15.4",
     "@oclif/test": "^1.1.0",
@@ -70,10 +70,10 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LabShare/services-build-cli/issues"
+    "url": "https://github.com/niaid/services-build-cli/issues"
   },
-  "homepage": "https://github.com/LabShare/services-build-cli#readme",
+  "homepage": "https://github.com/niaid/services-build-cli#readme",
   "release": {
-    "extends": "@labshare/semantic-release-config"
+    "extends": "@niaid/semantic-release-config"
   }
 }
